@@ -1,0 +1,150 @@
+@import url('./fonts.css');
+@import url('./colors.css');
+
+*
+{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	transition: 0.1s;
+	scroll-behavior: smooth;
+	border-radius: 7px;
+}
+
+body
+{
+	font-family: 'Oxanium';
+	background-color: var(--dark-green);
+	width: 100%;
+	height: 100%;
+}
+
+main
+{
+	width: 100%;
+	height: 100%;
+}
+
+.title
+{
+	font-family: 'Rubik Iso';
+	font-size: 4rem;
+	padding: 20px;
+	text-align: center;
+	color: var(--nyanza);
+}
+
+.activity-section
+{
+	display: flex;
+	width: 95%;
+	flex-direction: column;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	padding: 4em;
+}
+
+/********************************************** 	Text Area 	 **********************************************************/
+.input-area
+{
+	display: flex;
+	flex-direction: row;
+	padding: 0 12px;
+	width: 100%;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+
+.user-area
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.text-area-label
+{
+	color: var(--nyanza);
+	font-size: 1.7em;
+	padding: 8px 0;
+}
+
+.reusable-textarea-component
+{
+	background-color: var(--dartmouth-green);
+	color: var(--nyanza);
+	font-family: 'Oxanium';
+	font-size: 1.2em;
+	min-height: 300px;
+	padding: 7px 10px;
+	width: 400px;
+	resize: none;
+}
+
+.reusable-textarea-component::placeholder
+{
+	color: var(--mint);
+	opacity: 0.5;
+	font-size: 1.1em;
+}
+
+.reusable-textarea-component:focus
+{
+	outline: none;
+	border: 2px solid var(--nyanza);
+}
+
+.button-area
+{
+	width: 100%;
+	padding: 40px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.action-button
+{
+	background-color: var(--brunswick-green);
+	color: var(--nyanza);
+	border: 2px solid var(--mint);
+	padding: 8px;
+	font-size: 12pt;
+	cursor: pointer;
+}
+
+.action-button:hover
+{
+	background-color: var(--mint);
+	color: var(--dark-green);
+}
+
+.action-button:active
+{
+	background-color: var(--dark-green);
+	color: var(--nyanza);
+}
+
+.output-area
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.output-textarea
+{
+	background-color: var(--brunswick-green);
+	border: none;
+	resize: none;
+}
+
+.output-textarea:focus
+{
+	outline: none;
+	border: none
+}
