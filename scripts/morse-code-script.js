@@ -30,3 +30,24 @@ function textToMorse ()
 	}
 	document.getElementById( 'morse-output' ).value = morse.trim()
 }
+
+function morseToText ()
+{
+	const morse = document.getElementById( 'morse-input' ).value.trim()
+	let text = ''
+	const codes = morse.split( ' ' )
+	for ( const code of codes )
+	{
+		if ( reverseMorseCodeMap[ code ] )
+		{
+			text += reverseMorseCodeMap[ code ]
+		} else if ( code === '' )
+		{
+			text += ''
+		} else
+		{
+			text += '?' // unknown Morse code
+		}
+	}
+	document.getElementById( 'morse-output' ).value = text
+}
