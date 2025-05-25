@@ -82,3 +82,30 @@ main
 	outline: none;
 	border: 2px solid var(--nyanza);
 }
+
+.button-area
+{
+	padding: 12px;
+}
+
+.action-button
+{
+	background-color: var(--brunswick-green);
+	color: var(--nyanza);
+	border: 2px solid var(--mint);
+	padding: 8px;
+	font-size: 12pt;
+	cursor: pointer;
+}
+
+.action-button:hover
+{
+	background-color: var(--mint);
+	color: var(--dark-green);
+}
+
+.action-button:active
+{
+	background-color: var(--dark-green);
+	color: var(--nyanza);
+}
