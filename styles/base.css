@@ -59,3 +59,26 @@ main
 	font-size: 1.7em;
 	padding: 8px 0;
 }
+
+.reusable-textarea-component
+{
+	background-color: var(--dartmouth-green);
+	color: var(--nyanza);
+	min-height: 300px;
+	padding: 7px 10px;
+	width: 400px;
+	resize: vertical;
+}
+
+.reusable-textarea-component::placeholder
+{
+	color: var(--mint);
+	opacity: 0.5;
+	font-size: 1.1em;
+}
+
+.reusable-textarea-component:focus
+{
+	outline: none;
+	border: 2px solid var(--nyanza);
+}
