@@ -14,23 +14,32 @@
 		<section class="activity-section">
 
 			<div class="input-area">
-				<label class="text-area-label" for="text-input">Text Input</label>
-				<textarea id="text-input" class="reusable-textarea-component"
-					placeholder="Enter text to convert to Morse code..."></textarea>
 
-				<label class="text-area-label" for="morse-input">Morse Input</label>
-				<textarea id="morse-input" class="reusable-textarea-component"
-					placeholder="Enter Morse code to convert to text..."></textarea>
-
-				<div class="button-area">
-					<button class="action-button" onclick="textToMorse()">Text to Morse</button>
-					<button class="action-button">Morse to Text</button>
+				<div class="user-area">
+					<label class="text-area-label" for="text-input">Text Input</label>
+					<textarea id="text-input" class="reusable-textarea-component"
+						placeholder="Enter text to convert to Morse code..."></textarea>
 				</div>
 
+				<div class="user-area">
+					<label class="text-area-label" for="morse-input">Morse Input</label>
+					<textarea id="morse-input" class="reusable-textarea-component"
+						placeholder="Enter Morse code to convert to text..."></textarea>
+				</div>
+
+			</div>
+
+			<div class="button-area">
+				<button class="action-button" onclick="textToMorse()">Text to Morse</button>
+				<button class="action-button">Morse to Text</button>
+			</div>
+
+			<div class="output-area">
 				<label class="text-area-label" for="morse-output">Output</label>
-				<textarea id="morse-output" class="reusable-textarea-component"
+				<textarea id="morse-output" class="reusable-textarea-component output-textarea"
 					placeholder="Translation will appear here..." readonly></textarea>
 			</div>
+
 		</section>
 
 		<script src="scripts/morse-code-script.js"></script>
