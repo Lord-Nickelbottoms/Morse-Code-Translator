@@ -64,10 +64,12 @@ main
 {
 	background-color: var(--dartmouth-green);
 	color: var(--nyanza);
+	font-family: 'Oxanium';
+	font-size: 1.2em;
 	min-height: 300px;
 	padding: 7px 10px;
 	width: 400px;
-	resize: vertical;
+	resize: none;
 }
 
 .reusable-textarea-component::placeholder
