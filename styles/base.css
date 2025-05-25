@@ -109,3 +109,25 @@ main
 	background-color: var(--dark-green);
 	color: var(--nyanza);
 }
+
+.output-area
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.output-textarea
+{
+	background-color: var(--brunswick-green);
+	border: none;
+	resize: none;
+}
+
+.output-textarea:focus
+{
+	outline: none;
+	border: none
+}
