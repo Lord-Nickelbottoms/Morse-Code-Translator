@@ -52,3 +52,10 @@ main
 	align-items: center;
 	justify-content: center;
 }
+
+.text-area-label
+{
+	color: var(--nyanza);
+	font-size: 1.7em;
+	padding: 8px 0;
+}
