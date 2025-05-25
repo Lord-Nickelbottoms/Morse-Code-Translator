@@ -42,3 +42,13 @@ main
 	justify-content: center;
 	padding: 4em;
 }
+
+/********************************************** 	Text Area 	 **********************************************************/
+.input-area
+{
+	display: flex;
+	flex-direction: column;
+	padding: 0 12px;
+	align-items: center;
+	justify-content: center;
+}
