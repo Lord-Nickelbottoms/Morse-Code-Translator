@@ -12,3 +12,21 @@ const morseCodeMap = {
 	'$': '...-..-', '@': '.--.-.', ' ': '/'
 }
 
+const reverseMorseCodeMap = Object.fromEntries( Object.entries( morseCodeMap ).map( ( [ k, v ] ) => [ v, k ] ) )
+
+function textToMorse ()
+{
+	const text = document.getElementById( 'text-input' ).value.toUpperCase()
+	let morse = ''
+	for ( const char of text )
+	{
+		if ( morseCodeMap[ char ] )
+		{
+			morse += morseCodeMap[ char ] + ' '
+		} else
+		{
+			morse += '? ' // unknown character
+		}
+	}
+	document.getElementById( 'morse-output' ).value = morse.trim()
+}
