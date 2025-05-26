@@ -15,15 +15,15 @@
 body
 {
 	font-family: 'Oxanium';
-	background-color: var(--dark-green);
-	width: 100%;
-	height: 100%;
+	background-color: var(--rich-black);
+	width: 100vw;
+	height: 100vh;
 }
 
 main
 {
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 }
 
 .title
@@ -33,7 +33,7 @@ main
 	font-size: 4rem;
 	padding: 20px;
 	text-align: center;
-	color: var(--nyanza);
+	color: var(--blue);
 }
 
 .activity-section
@@ -66,15 +66,15 @@ main
 
 .text-area-label
 {
-	color: var(--nyanza);
+	color: var(--blue);
 	font-size: 1.7em;
 	padding: 8px 0;
 }
 
 .reusable-textarea-component
 {
-	background-color: var(--dartmouth-green);
-	color: var(--nyanza);
+	background-color: var(--prussian-blue);
+	color: var(--blue);
 	font-family: 'Oxanium';
 	font-size: 1.2em;
 	min-height: 300px;
@@ -85,7 +85,7 @@ main
 
 .reusable-textarea-component::placeholder
 {
-	color: var(--mint);
+	color: var(--blue);
 	opacity: 0.5;
 	font-size: 1.1em;
 }
@@ -93,7 +93,7 @@ main
 .reusable-textarea-component:focus
 {
 	outline: none;
-	border: 2px solid var(--nyanza);
+	border: 2px solid var(--blue);
 }
 
 .button-area
@@ -109,9 +109,9 @@ main
 
 .action-button
 {
-	background-color: var(--brunswick-green);
-	color: var(--nyanza);
-	border: 2px solid var(--mint);
+	background-color: var(--prussian-blue-3);
+	color: var(--blue);
+	border: 2px solid var(--blue);
 	padding: 8px;
 	font-size: 12pt;
 	cursor: pointer;
@@ -119,14 +119,14 @@ main
 
 .action-button:hover
 {
-	background-color: var(--mint);
-	color: var(--dark-green);
+	background-color: var(--blue);
+	color: var(--rich-black);
 }
 
 .action-button:active
 {
-	background-color: var(--dark-green);
-	color: var(--nyanza);
+	background-color: var(--rich-black);
+	color: var(--indigo-dye);
 }
 
 .output-area
@@ -140,7 +140,8 @@ main
 
 .output-textarea
 {
-	background-color: var(--brunswick-green);
+	background-color: var(--prussian-blue-3);
+	color: var(--blue);
 	border: none;
 	resize: none;
 }
@@ -160,12 +161,12 @@ main
 
 .glitch-text
 {
-	color: #0f0;
+	color: #0082c9;
 	font-size: 5rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	position: relative;
-	text-shadow: 0 0 10px #0f0;
+	text-shadow: 0 0 10px #0082c9;
 }
 
 .glitch-clone
@@ -173,13 +174,16 @@ main
 	position: absolute;
 	top: 0;
 	left: 0;
-	color: #0f0;
+	color: #0082c9;
+	text-shadow: #0097e9 0 0 10px, #0082c9 0 0 20px, #0082c9 0 0 30px, #0082c9 0 0 40px;
 	opacity: 0.8;
 }
 
 .glitch-clone:nth-child(2)
 {
 	color: #f0f;
+	text-shadow: #ff2bff 0 0 10px;
+	position: absolute;
 	left: 2px;
 	animation: glitch-anim-1 2s infinite linear alternate-reverse;
 }
@@ -187,6 +191,8 @@ main
 .glitch-clone:nth-child(3)
 {
 	color: #0ff;
+	text-shadow: #0ff 0 0 10px;
+	position: absolute;
 	left: -2px;
 	animation: glitch-anim-2 2s infinite linear alternate-reverse;
 }
@@ -262,8 +268,8 @@ main
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	background: linear-gradient(to bottom,
 			rgba(0, 255, 0, 0.1) 0%,
 			rgba(0, 255, 0, 0) 10%);

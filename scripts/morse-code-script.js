@@ -28,7 +28,9 @@ function textToMorse ()
 			morse += '? ' // unknown character
 		}
 	}
-	document.getElementById( 'morse-output' ).value = morse.trim()
+	var outputElement = document.getElementById( 'morse-output' )
+	outputElement.value = morse.trim()
+	outputElement.scrollIntoView( { behavior: 'smooth', block: 'end' } )
 }
 
 function morseToText ()
@@ -49,5 +51,7 @@ function morseToText ()
 			text += '?' // unknown Morse code
 		}
 	}
-	document.getElementById( 'morse-output' ).value = text
+	var outputElement = document.getElementById( 'morse-output' )
+	outputElement.value = text
+	outputElement.scrollIntoView( { behavior: 'smooth', block: 'end' } )
 }
