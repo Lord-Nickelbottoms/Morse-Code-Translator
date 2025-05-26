@@ -144,6 +144,7 @@ main
 	color: var(--blue);
 	border: none;
 	resize: none;
+	margin: 20px 0;
 }
 
 .output-textarea:focus
