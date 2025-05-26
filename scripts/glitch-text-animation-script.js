@@ -74,7 +74,7 @@ function createBinaryRain ()
 	const container = document.querySelector( 'body' )
 	const chars = "01"
 
-	for ( let i = 0; i < 50; i++ )
+	for ( let i = 0; i < 100; i++ )
 	{
 		const element = document.createElement( 'div' )
 		element.className = 'binary-char'
