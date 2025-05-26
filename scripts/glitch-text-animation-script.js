@@ -84,6 +84,7 @@ function createBinaryRain ()
 		element.style.fontSize = ( Math.random() * 10 + 10 ) + 'px'
 		element.style.left = Math.random() * 100 + 'vw'
 		element.style.top = '-20px'
+		element.style.zIndex = -1
 		container.appendChild( element )
 
 		animateBinaryChar( element )
