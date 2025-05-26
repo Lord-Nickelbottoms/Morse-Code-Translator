@@ -80,7 +80,7 @@ function createBinaryRain ()
 		element.className = 'binary-char'
 		element.textContent = chars[ Math.floor( Math.random() * chars.length ) ]
 		element.style.position = 'absolute'
-		element.style.color = 'rgba(0, 255, 0, 0.5)'
+		element.style.color = '#0082c9'
 		element.style.fontSize = ( Math.random() * 10 + 10 ) + 'px'
 		element.style.left = Math.random() * 100 + 'vw'
 		element.style.top = '-20px'
