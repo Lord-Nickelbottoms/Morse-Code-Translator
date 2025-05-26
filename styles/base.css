@@ -174,13 +174,16 @@ main
 	position: absolute;
 	top: 0;
 	left: 0;
-	color: #0f0;
+	color: #0082c9;
+	text-shadow: #0097e9 0 0 10px, #0082c9 0 0 20px, #0082c9 0 0 30px, #0082c9 0 0 40px;
 	opacity: 0.8;
 }
 
 .glitch-clone:nth-child(2)
 {
 	color: #f0f;
+	text-shadow: #ff2bff 0 0 10px;
+	position: absolute;
 	left: 2px;
 	animation: glitch-anim-1 2s infinite linear alternate-reverse;
 }
@@ -188,6 +191,8 @@ main
 .glitch-clone:nth-child(3)
 {
 	color: #0ff;
+	text-shadow: #0ff 0 0 10px;
+	position: absolute;
 	left: -2px;
 	animation: glitch-anim-2 2s infinite linear alternate-reverse;
 }
