@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Morse Code Translator</title>
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<main>
+		<h1 class="title glitch-text"></h1>
+		<div class="glitch-container">
+			<h1 class="title glitch-text" id="hacker-text">_MORSE_CODE_TRANSLATOR</h1>
+			<h1 class="title glitch-text glitch-clone">_MORSE_CODE_TRANSLATOR</h1>
+			<h1 class="title glitch-text glitch-clone">_MORSE_CODE_TRANSLATOR</h1>
+			<div class="scanline"></div>
+		</div>
+		<section class="activity-section">
+
+			<div class="input-area">
+
+				<div class="user-area">
+					<label class="text-area-label" for="text-input">Text Input</label>
+					<textarea id="text-input" class="reusable-textarea-component"
+						placeholder="Enter text to convert to Morse code..."></textarea>
+				</div>
+
+				<div class="user-area">
+					<label class="text-area-label" for="morse-input">Morse Input</label>
+					<textarea id="morse-input" class="reusable-textarea-component"
+						placeholder="Enter Morse code to convert to text..."></textarea>
+				</div>
+
+			</div>
+
+			<div class="button-area">
+				<button class="action-button" onclick="textToMorse()">Text to Morse</button>
+				<button class="action-button" onclick="morseToText()">Morse to Text</button>
+			</div>
+
+			<div class="output-area">
+				<label class="text-area-label" for="morse-output">Output</label>
+				<textarea id="morse-output" class="reusable-textarea-component output-textarea"
+					placeholder="Translation will appear here..." readonly></textarea>
+
+					<button type="button"
+					 class="action-button clipboard-button" 
+					 onclick="copyToClipboard()">Copy to Clipboard <i class="fa-regular fa-clipboard"></i></button>
+			</div>
+
+		</section>
+
+		<script src="scripts/morse-code-script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+		<script src="scripts/glitch-text-animation-script.js"></script>
+		<script src="scripts/clipboard-script.js"></script>
+	</main>

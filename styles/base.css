@@ -1,0 +1,292 @@
+@import url('./fonts.css');
+@import url('./colors.css');
+@import url('./animations.css');
+
+*
+{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	transition: 0.1s;
+	scroll-behavior: smooth;
+	border-radius: 7px;
+}
+
+body
+{
+	font-family: 'Oxanium';
+	background-color: var(--rich-black);
+	width: 100vw;
+	height: 100vh;
+}
+
+main
+{
+	width: 100vw;
+	height: 100vh;
+}
+
+.title
+{
+	animation: typing 2s steps(12, end), cursor .2s steps(12, end) infinite;
+	font-family: 'Rubik Iso';
+	font-size: 4rem;
+	padding: 20px;
+	text-align: center;
+	color: var(--blue);
+}
+
+.activity-section
+{
+	display: flex;
+	width: 95%;
+	flex-direction: column;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	padding: 4em;
+}
+
+/********************************************** 	Text Area 	 **********************************************************/
+.input-area
+{
+	display: flex;
+	flex-direction: row;
+	padding: 0 12px;
+	width: 100%;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+
+.user-area
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.text-area-label
+{
+	color: var(--blue);
+	font-size: 1.7em;
+	padding: 8px 0;
+}
+
+.reusable-textarea-component
+{
+	background-color: var(--prussian-blue);
+	color: var(--blue);
+	font-family: 'Oxanium';
+	font-size: 1.2em;
+	min-height: 300px;
+	padding: 7px 10px;
+	width: 400px;
+	resize: none;
+}
+
+.reusable-textarea-component::placeholder
+{
+	color: var(--blue);
+	opacity: 0.5;
+	font-size: 1.1em;
+}
+
+.reusable-textarea-component:focus
+{
+	outline: none;
+	border: 2px solid var(--blue);
+}
+
+.button-area
+{
+	width: 100%;
+	padding: 40px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.action-button
+{
+	background-color: var(--prussian-blue-3);
+	color: var(--blue);
+	border: 2px solid var(--blue);
+	padding: 8px;
+	font-size: 12pt;
+	cursor: pointer;
+}
+
+.action-button:hover
+{
+	background-color: var(--blue);
+	color: var(--rich-black);
+}
+
+.action-button:active
+{
+	background-color: var(--rich-black);
+	color: var(--indigo-dye);
+}
+
+.output-area
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.output-textarea
+{
+	background-color: var(--prussian-blue-3);
+	color: var(--blue);
+	border: none;
+	resize: none;
+	margin: 20px 0;
+}
+
+.output-textarea:focus
+{
+	outline: none;
+	border: none
+}
+
+
+/********************************************** 	GSAP JS animation setup	 **********************************************************/
+.glitch-container
+{
+	position: relative;
+}
+
+.glitch-text
+{
+	color: #0082c9;
+	font-size: 5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+	text-shadow: 0 0 10px #0082c9;
+}
+
+.glitch-clone
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #0082c9;
+	text-shadow: #0097e9 0 0 10px, #0082c9 0 0 20px, #0082c9 0 0 30px, #0082c9 0 0 40px;
+	opacity: 0.8;
+}
+
+.glitch-clone:nth-child(2)
+{
+	color: #f0f;
+	text-shadow: #ff2bff 0 0 10px;
+	position: absolute;
+	left: 2px;
+	animation: glitch-anim-1 2s infinite linear alternate-reverse;
+}
+
+.glitch-clone:nth-child(3)
+{
+	color: #0ff;
+	text-shadow: #0ff 0 0 10px;
+	position: absolute;
+	left: -2px;
+	animation: glitch-anim-2 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim-1
+{
+	0%
+	{
+		transform: translate(0);
+	}
+
+	20%
+	{
+		transform: translate(-3px, 3px);
+	}
+
+	40%
+	{
+		transform: translate(-3px, -3px);
+	}
+
+	60%
+	{
+		transform: translate(3px, 3px);
+	}
+
+	80%
+	{
+		transform: translate(3px, -3px);
+	}
+
+	100%
+	{
+		transform: translate(0);
+	}
+}
+
+@keyframes glitch-anim-2
+{
+	0%
+	{
+		transform: translate(0);
+	}
+
+	20%
+	{
+		transform: translate(3px, 3px);
+	}
+
+	40%
+	{
+		transform: translate(3px, -3px);
+	}
+
+	60%
+	{
+		transform: translate(-3px, 3px);
+	}
+
+	80%
+	{
+		transform: translate(-3px, -3px);
+	}
+
+	100%
+	{
+		transform: translate(0);
+	}
+}
+
+.scanline
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(to bottom,
+			rgba(0, 255, 0, 0.1) 0%,
+			rgba(0, 255, 0, 0) 10%);
+	background-size: 100% 8px;
+	animation: scanline 4s linear infinite;
+}
+
+@keyframes scanline
+{
+	0%
+	{
+		transform: translateY(0);
+	}
+
+	100%
+	{
+		transform: translateY(100%);
+	}
+}
