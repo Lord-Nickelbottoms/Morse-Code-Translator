@@ -96,7 +96,7 @@ function animateBinaryChar ( element )
 	const delay = Math.random() * 5
 
 	gsap.to( element, {
-		y: '100vh',
+		y: '150vh',
 		duration: duration,
 		delay: delay,
 		ease: 'none',
