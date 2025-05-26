@@ -15,9 +15,7 @@
 body
 {
 	font-family: 'Oxanium';
-	background-color: var(--dark-green);
-	width: 100%;
-	height: 100%;
+	background-color: var(--rich-black);
 	width: 100vw;
 	height: 100vh;
 }
@@ -35,7 +33,7 @@ main
 	font-size: 4rem;
 	padding: 20px;
 	text-align: center;
-	color: var(--nyanza);
+	color: var(--blue);
 }
 
 .activity-section
@@ -68,15 +66,15 @@ main
 
 .text-area-label
 {
-	color: var(--nyanza);
+	color: var(--blue);
 	font-size: 1.7em;
 	padding: 8px 0;
 }
 
 .reusable-textarea-component
 {
-	background-color: var(--dartmouth-green);
-	color: var(--nyanza);
+	background-color: var(--prussian-blue);
+	color: var(--blue);
 	font-family: 'Oxanium';
 	font-size: 1.2em;
 	min-height: 300px;
@@ -87,7 +85,7 @@ main
 
 .reusable-textarea-component::placeholder
 {
-	color: var(--mint);
+	color: var(--blue);
 	opacity: 0.5;
 	font-size: 1.1em;
 }
@@ -95,7 +93,7 @@ main
 .reusable-textarea-component:focus
 {
 	outline: none;
-	border: 2px solid var(--nyanza);
+	border: 2px solid var(--blue);
 }
 
 .button-area
@@ -111,9 +109,9 @@ main
 
 .action-button
 {
-	background-color: var(--brunswick-green);
-	color: var(--nyanza);
-	border: 2px solid var(--mint);
+	background-color: var(--prussian-blue-3);
+	color: var(--blue);
+	border: 2px solid var(--blue);
 	padding: 8px;
 	font-size: 12pt;
 	cursor: pointer;
@@ -121,14 +119,14 @@ main
 
 .action-button:hover
 {
-	background-color: var(--mint);
-	color: var(--dark-green);
+	background-color: var(--blue);
+	color: var(--rich-black);
 }
 
 .action-button:active
 {
-	background-color: var(--dark-green);
-	color: var(--nyanza);
+	background-color: var(--rich-black);
+	color: var(--indigo-dye);
 }
 
 .output-area
@@ -142,7 +140,8 @@ main
 
 .output-textarea
 {
-	background-color: var(--brunswick-green);
+	background-color: var(--prussian-blue-3);
+	color: var(--blue);
 	border: none;
 	resize: none;
 }
@@ -162,12 +161,12 @@ main
 
 .glitch-text
 {
-	color: #0f0;
+	color: #0082c9;
 	font-size: 5rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	position: relative;
-	text-shadow: 0 0 10px #0f0;
+	text-shadow: 0 0 10px #0082c9;
 }
 
 .glitch-clone

@@ -1,6 +1,6 @@
 :root
 {
-	--nyanza: #d8f3dcff;
+	/* --nyanza: #d8f3dcff;
 	--celadon: #b7e4c7ff;
 	--celadon-2: #95d5b2ff;
 	--mint: #74c69dff;
@@ -8,5 +8,15 @@
 	--sea-green: #40916cff;
 	--dartmouth-green: #2d6a4fff;
 	--brunswick-green: #1b4332ff;
-	--dark-green: #081c15ff;
+	--dark-green: #081c15ff; */
+	--blue: #0082c9;
+	--indigo-dye: #014c75ff;
+	--indigo-dye-2: #014368ff;
+	--indigo-dye-3: #013b5bff;
+	--prussian-blue: #01324eff;
+	--prussian-blue-2: #012a41ff;
+	--prussian-blue-3: #002234ff;
+	--rich-black: #001927ff;
+	--rich-black-2: #00111aff;
+	--rich-black-3: #00080dff;
 }
