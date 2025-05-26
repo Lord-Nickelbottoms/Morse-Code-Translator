@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Morse Code Translator</title>
 	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -44,6 +45,10 @@
 				<label class="text-area-label" for="morse-output">Output</label>
 				<textarea id="morse-output" class="reusable-textarea-component output-textarea"
 					placeholder="Translation will appear here..." readonly></textarea>
+
+					<button type="button"
+					 class="action-button clipboard-button" 
+					 onclick="copyToClipboard()">Copy to Clipboard <i class="fa-regular fa-clipboard"></i></button>
 			</div>
 
 		</section>
@@ -52,4 +57,5 @@
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
 		<script src="scripts/glitch-text-animation-script.js"></script>
+		<script src="scripts/clipboard-script.js"></script>
 	</main>
