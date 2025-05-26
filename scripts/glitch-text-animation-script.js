@@ -59,7 +59,7 @@ document.addEventListener( 'DOMContentLoaded', () =>
 		duration: 0.5,
 		x: () => Math.random() * 4 - 2,
 		y: () => Math.random() * 4 - 2,
-		opacity: () => 0.5 + Math.random() * 0.3,
+		opacity: () => 0.5 + Math.random() * 0.5,
 		repeat: -1,
 		yoyo: true,
 		ease: "sine.inOut"
