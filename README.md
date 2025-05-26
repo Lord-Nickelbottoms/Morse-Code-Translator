@@ -4,7 +4,7 @@ Have you ever found some weird looking text that contained just two characters; 
 
 Ever wanted to know what that means? Well say no more as you've come to the right place. Here you'll find a simple yet robust translator 🧐 tool that gives you exactly what you want, translating from and to morse code.
 
-Just head over to the link and you can get started translating all the Morse Code you could ever want.
+Just head over to ![Live Version](https://morse-code-translator-qi1p.onrender.com) and you can get started translating all the Morse Code you could ever want.
 ## Tech Stack
 
 **Client:** All of this was lovingly built with vanilla HTML, CSS and JavaScript.
